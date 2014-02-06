@@ -17,6 +17,10 @@ class Album
   def self.find(id)
     $albums[id]
   end
+
+  def self.all
+    $albums
+  end
   
   def update(args = {})
     @name = args[:name]
